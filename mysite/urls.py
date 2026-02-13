@@ -17,7 +17,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from home import views
-
+admin.site.site_header = "Ahmed IceCream admin"
+admin.site.site_title = "Ahmed IceCream admin"
+admin.site.index_title = "Ahmed IceCream admin"
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("about/", views.about, name="about"),
