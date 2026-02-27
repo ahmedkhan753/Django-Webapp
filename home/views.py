@@ -1,7 +1,9 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+
 # Create your views here.
 def index(request):
+    """Render the home index page"""
     context={
         "variable":"hello this is a test variable",
         "variable2":"this is another test variable"
