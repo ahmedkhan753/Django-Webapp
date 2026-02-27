@@ -11,8 +11,13 @@ def index(request):
     return render(request, "index.html", context)
 
 def about(request):
+    """Display the about page"""
     return HttpResponse("this is about page")
+
 def services(request):
+    """Display the services page"""
     return HttpResponse("this is services page")
+
 def contact(request):
+    """Display the contact page"""
     return HttpResponse("this is contact page")
